@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    text-align: center;
+}
+
+nav {
+    background-color: #000000;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > div > a {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 20px;
+    transition: all .3s;
+}
+
+nav > div > a:hover {
+    color: #ff0000;
+    background-color: #404040
+}
+
+nav > div > a:active {
+    color: blue;
+    font-size:18px;
+    justify-content: center;
+}
+
+.flexbox-galeria{
+  margin: 10px 10px 10px 200px;
+  background-color: #fff;
+  width: 890px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* justify-content: center; */
+  justify-content:space-evenly;
+}
+.flexbox-galeria .box{
+  background: url(https://i.ebayimg.com/images/i/162625004557-0-1/s-l1000.jpg);
+  margin: 5px;
+  width: 250px;
+  height: 150px;
+  background-size: cover;
+  /* justify-content: center; */
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+      height: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    nav > div > a {
+      height: 300px;
+    }
+  }
+
+#bedu-logo {
+    margin-left: 20px;
+    width: 75px;
+}
+
+.contact{
+  display: flex;
+  justify-content: center;
+}
+.contact .form-email{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    bottom: 0;
+    color: white;
+    /* position: absolute; */
+}
